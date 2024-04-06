@@ -1,0 +1,50 @@
+[
+    {
+    "ID": "Cod: 1",
+    "nombre": "PALETA PADEL SOLA BELGIQUE",
+    "precio": "140000",
+    "imagen": "assets/productos/paleta1.png"
+},
+    {
+    "ID": "Cod: 2",
+    "nombre": "PALETA PADEL STEEL CUSTOM W",
+    "precio": "150000",
+    "imagen": "assets/productos/paleta2.png"
+},
+    {
+    "ID": "Cod: 3",
+    "nombre": "PALETA PADEL STEEL CUSTOM DARK",
+    "precio": "154000",
+    "imagen": "assets/productos/paleta3.png"
+},
+    {
+    "ID": "Cod: 4",
+    "nombre": "PALETA PADEL COAST MAGNA FULL",
+    "precio": "180500",
+    "imagen": "assets/productos/paleta4.png"
+},
+    {
+    "ID": "Cod: 5",
+    "nombre": "PALETA ROYAL PADEL ANIVERSARIO",
+    "precio": "320000", 
+    "imagen": "assets/productos/paleta5.png"
+},
+    {
+    "ID": "Cod: 6", 
+    "nombre": "PALETA PADEL URICH IRON",
+    "precio": "457500", 
+    "imagen": "assets/productos/paleta6.png"
+},
+    {
+    "ID": "Cod: 7",
+    "nombre": "PALETA PADEL CLASS ONE",
+    "precio": "135500",
+    "imagen": "assets/productos/paleta7.png"
+},
+    {
+    "ID": "Cod: 8",
+    "nombre": "PALETA PADEL VAIRO BLCK CARBON",
+    "precio": "146800",
+    "imagen": "assets/productos/paleta8.png"
+}
+]

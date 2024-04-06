@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roma Padel</title>
+    <!-- Link Css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="marca">
+                <p>ROMA PADEL</p>
+            </div>
+            <div class="menu">
+                <li>
+                    <a href="">INICIO</a>
+                    <a href="carrito.html">CARRITO</a>
+                    <a href="">CONTACTO</a>
+                </li>
+            </div>
+            <div class="ingreso">
+                <li>
+                <a href="">INGRESO</a>
+            </li>
+            </div>
+        </nav>
+    </header>
+    <main>
+     <h1>ESPECIALISTAS EN PADEL</h1>     
+     <h6>Info:<br>
+        1- Al seleccionar un artículo te lo deja detallado para poder indicar la cantidad y posterior agregarlo al carrito .<br>
+        2- Al agregar al carrito, genera un nuevo array + muestra un nuevo detalle con subtotal y acumula el gasto total de la compra, como así también el Q de productos.<br>
+        Al mismo tiempo, guarda la información del carrito en LocalStorage.<br>
+        3- Cuando se vacía carrito, elimina el array generado, resetea toda la información en pantalla + elimina LocalStorage.<br>
+        Adicional, agregar y vaciar carrito, arroja una advertencia si se los utiliza sin datos.
+    </h6>
+
+    <div id="grilla"></div>    
+
+     <div class="grid-productos">
+        <div class="grilla-productos">
+            <img src="assets/productos/paleta1.png" alt="Pala Sola Belgique">
+            <p id="codigo" class="codigoid">Cod: 1</p>
+            <p class="nombre-producto1">PALETA PADEL SOLA BELGIQUE </p>
+            <p class="precio-producto1">$140.000</p>
+            <p class="añadir-producto">Seleccionar artículo</p>
+        </div>
+        <div class="grilla-productos">
+            <img src="assets/productos/paleta2.png" alt="Pala Steel Custom W">
+            <p id="codigo" class="codigoid">Cod: 2</p>
+            <p class="nombre-producto">PALETA PADEL STEEL CUSTOM W </p> 
+            <p class="precio-producto">$150.000</p>
+            <p class="añadir-producto">Seleccionar artículo</p>
+        </div>
+        <div class="grilla-productos">
+            <img src="assets/productos/paleta3.png" alt="Pala Steel Custom Dark">
+            <p id="codigo" class="codigoid">Cod: 3</p>
+            <p class="nombre-producto">PALETA PADEL STEEL CUSTOM DARK </p>            
+            <p class="precio-producto">$154.000</p>
+            <p class="añadir-producto">Seleccionar artículo</p>
+        </div>        
+        <div class="grilla-productos">        
+        <img src="assets/productos/paleta4.png" alt="Pala Coast Magna">
+        <p id="codigo" class="codigoid">Cod: 4</p>
+        <p class="nombre-producto">PALETA PADEL COAST MAGNA FULL </p>  
+        <p class="precio-producto">$180.500</p>
+        <p class="añadir-producto">Seleccionar artículo</p>
+    </div>
+    <div class="grilla-productos">
+        <img src="assets/productos/paleta5.png" alt="Pala Royal Aniversario">
+        <p id="codigo" class="codigoid">Cod: 5</p>
+        <p class="nombre-producto">PALETA ROYAL PADEL ANIVERSARIO </p>  
+        <p class="precio-producto">$320.000</p>
+        <p class="añadir-producto">Seleccionar artículo</p>
+    </div>        
+    <div class="grilla-productos">
+        <img src="assets/productos/paleta6.png" alt="Pala Urich Iron">
+        <p id="codigo" class="codigoid">Cod: 6</p>
+        <p class="nombre-producto">PALETA PADEL URICH IRON </p>  
+        <p class="precio-producto">$457.500</p>
+        <p class="añadir-producto">Seleccionar artículo</p>
+        </div> 
+        <div class="grilla-productos">
+            <img src="assets/productos/paleta7.png" alt="Pala Class One">
+            <p id="codigo" class="codigoid">Cod: 7</p>
+            <p class="nombre-producto">PALETA PADEL CLASS ONE </p> 
+            <p class="precio-producto">$135.500</p>
+            <p class="añadir-producto">Seleccionar artículo</p>
+        </div>
+       <div class="grilla-productos">
+        <img src="assets/productos/paleta8.png" alt="Pala Vairo Black C">
+        <p id="codigo" class="codigoid">Cod: 8</p>
+        <p class="nombre-producto">PALETA PADEL VAIRO BLCK CARBON </p> 
+        <p class="precio-producto">$146.800</p>
+        <p class="añadir-producto">Seleccionar artículo</p>
+       </div> 
+        </div>
+        <div class="bloque-agregarCarrito">
+        <div class="grid-carrito">                      
+            <p>Codigo</p>            
+            <p>Producto</p>
+            <p>Cantidad</p>
+            <p>Precio Unidad</p>                    
+            <p id="keyproducto"></p>            
+            <p id="producto"></p>
+            <input type="number" id="cantidadproducto" value=""></input>
+            <p id="precio"></p>
+        </div> 
+        <div class="zonaBotonCarrito">                    
+            <p id="cantidad"></p>
+            <p class="agregarCarrito">Agregar a carrito</p>
+            <p id="mjeSeleccionarProducto"></p>
+            <p class="eliminar" id="eliminar">Vaciar carrito</p>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th id="elmentoOculto1">Código</th>
+                    <th id="elmentoOculto2">Producto</th>
+                    <th id="elmentoOculto3">Precio</th>
+                    <th id="elmentoOculto6">Cantidad</th>
+                    <th id="elmentoOculto4">SubTotal</th>
+                </tr>
+            </thead>
+            <tbody id="tablaCarrito"></tbody>
+        </table>
+        <p id="elmentoOculto5" class="elmentoOculto5">Total de tu compra</p>
+        <p id="total"></p>
+        
+    </main>
+    <footer>
+            <div class="foot">
+                <p>© Buho 2024 | Desarrollo Web & JS</p>
+            </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
